@@ -1,13 +1,9 @@
 import React from "react";
 
-export default function WeatherDisplay({ city, weather}) {
-
-    
-
+export default function WeatherDisplay({ weather }) {
     return (
-        <div className="weather-display-container">
-            <p>{city === '' ? 'Search the weather' : `You are looking for '${city}' weather.`}</p>
-            <p>{!weather ? 'Weather not found' : `Weather: ${weather}`}</p>
+        <div className="weather-info">
+            {weather && (<p>Weather for {weather.name}: {weather.weather[0].description}</p>)}
         </div>
     );
 }

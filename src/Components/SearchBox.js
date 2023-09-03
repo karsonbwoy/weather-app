@@ -8,7 +8,7 @@ export default function SearchBox({ onClick }) {
     }
 
     return (
-        <div className="search-box-container">
+        <div className="city-search">
             <form>
             <label htmlFor="city-input">
                 <input type="text" id="city-input" placeholder="Search by city name..." onChange={e => handleChange(e.target.value)}></input>
