@@ -10,7 +10,7 @@ export default function WeatherApp () {
 
     function handleSubmit(e, city) {
       e.preventDefault();
-      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
         .then((response) => {
           if (!response.ok) {
             setWeatherData();
