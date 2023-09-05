@@ -5,7 +5,7 @@ import './WeatherApp.css'
 
 export default function WeatherApp () {
 
-    const apiKey = 'bf97df8adb1d6939bc19698300cba0f1'
+    const apiKey = 'bf97df8adb1d6939bc19698300cba0f1' //deactivated
     const [weatherData, setWeatherData] = useState() 
 
     function handleSubmit(e, city) {
